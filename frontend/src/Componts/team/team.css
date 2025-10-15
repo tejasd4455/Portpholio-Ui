@@ -1,0 +1,19 @@
+@keyframes dash {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.animate-dash {
+  background-image: repeating-linear-gradient(
+    to right,
+    #ec4899 0 10px,
+    transparent 10px 20px
+  );
+  background-size: 200% 2px;
+  background-repeat: repeat-x;
+  animation: dash 2s linear infinite;
+}

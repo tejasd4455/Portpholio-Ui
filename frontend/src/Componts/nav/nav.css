@@ -1,0 +1,17 @@
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s infinite;
+}
+.active {
+  color: #3b82f6; /* Tailwind blue-500 */
+  border-bottom: 2px solid #3b82f6;
+  
+}

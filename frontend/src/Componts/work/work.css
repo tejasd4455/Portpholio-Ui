@@ -1,0 +1,80 @@
+Custom scrollbar hiding
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Snap scrolling */
+@supports (scroll-snap-type: x mandatory) {
+  .snap-x {
+    scroll-snap-type: x mandatory;
+  }
+  .snap-center {
+    scroll-snap-align: center;
+  }
+}
+/* ProjectSection.css */
+
+/* General styles for the project card */
+.project-card {
+  background-color: white;
+  border-radius: 1.5rem; /* Rounded corners */
+  overflow: hidden; /* Prevents overflow of content */
+  border: 1px solid #d1d5db; /* Light gray border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Default shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: translateY(-0.5rem); /* Slight lift effect */
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 640px) {
+  .project-card {
+    margin: 0.5rem; /* Margin for mobile */
+  }
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 640px) {
+  .project-card {
+    margin: 1rem; /* Margin for larger screens */
+  }
+}
+
+/* Adjustments for text sizes */
+.text-sm {
+  font-size: 0.875rem; /* Small text size */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* Extra large text size */
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* 2x large text size */
+}
+
+/* Button styles */
+.bg-green-500 {
+  background-color: #48bb78; /* Green background */
+}
+
+.bg-gray-800 {
+  background-color: #2d3748; /* Dark gray background */
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #38a169; /* Darker green on hover */
+}
+
+.hover\:bg-black:hover {
+  background-color: #1a202c; /* Black on hover */
+}

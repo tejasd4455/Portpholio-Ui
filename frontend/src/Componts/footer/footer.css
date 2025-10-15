@@ -1,0 +1,25 @@
+.watermark {
+  font-family: 'Poppins', sans-serif;
+}
+
+footer a {
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.text-border {
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 0.2px rgb(148, 143, 143);
+}
+
+
+
+
+
+
+
